@@ -2,6 +2,18 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+.top-title{
+    background-color: #46A6EB;
+    height: 5em;
+}
+
+.text-title{
+    color:white;
+    font-size: 2em;
+    /* text-align: center; */
+    margin-left: 1em;
+    margin-top:1em;
+}
 
 
 .selection-container {
