@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Score Prediction</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <link href="styles/style-home.css" rel="stylesheet" type="text/css">
+    <script src="js/calculator.js"> </script>
+  </head>
+  
+  <body>
+    <div class="selection-container">
+      <div class="character-container">
+        <label for="characters">Personality:</label>
+        <select name="characters" id="characters">
+          <option value="none">none</option>
+          <option value="openness">openness </option>
+          <option value="extraversion">extraversion</option>
+          <option value="conscientiousness">conscientiousness</option>
+          <option value="agreeableness">agreeableness</option>
+          <option value="neuroticism">neuroticism</option>
+        </select> 
+      </div>
+
+      <div class="school-container">
+        <label for="school-type">School environment:</label>
+        <select name="school-type" id="school-type">
+          <option value="neutral">neutral</option>
+          <option value="good-school">good school</option>
+          <option value="bad-school">bad school</option>
+        </select>
+      </div>
+
+      <div class="parental-involvement-container">
+        <label for="parental-type">parental involvement:</label>
+        <select name="parental-type" id="parental-type">
+          <option value="parent-neutral">neutral</option>
+          <option value="parent-high">positive</option>
+          <option value="parent-negative">negative</option>
+        </select>
+      </div>
+
+      <div class="theory-container">
+        <label for="theory-of-mind">theories of mind:</label>
+        <select name="theory-of-mind" id="theory-of-mind">
+          <option value="none">none</option>
+          <option value="high-resillience">high resillience</option>
+          <option value="low-resillience">low resillience</option>
+        </select>
+      </div>
+
+      <div class="other-factor-container">
+        <label for="other-factor">other factors:</label>
+        <select name="other-factor" id="other-factor">
+          <option value="none">none</option>
+          <option value="bullying">bullied in middle school</option>
+          <option value="switch-school">frequent school switching</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="input-score">
+      <a>Input score</a>
+    </div>
+
+    <div class="competency-list-container">
+      <label for="Creativity">Creativity:</label>
+        <select name="Creativity" id="Creativity">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+      
+        <label for="Critical-thinking">Critical Thinking:</label>
+        <select name="Critical-thinking" id="Critical-thinking">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Communication">Communication:</label>
+        <select name="Communication" id="Communication">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+      
+        <label for="Collaboration">Collaboration:</label>
+        <select name="Collaboration" id="Collaboration">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Mindfulness">Mindfulness:</label>
+        <select name="Mindfulness" id="Mindfulness">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Curiousity">Curiousity:</label>
+        <select name="Curiousity" id="Curiousity">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Courage">Courage:</label>
+        <select name="Courage" id="Courage">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Resilience">Resilience:</label>
+        <select name="Resilience" id="Resilience">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Ethics">Ethics:</label>
+        <select name="Ethics" id="Ethics">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Leadership">Leadership:</label>
+        <select name="Leadership" id="Leadership">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Metacognition">Metacognition:</label>
+        <select name="Metacognition" id="Metacognition">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+
+        <label for="Growth-Mindset">Growth Mindset:</label>
+        <select name="Growth-Mindset" id="Growth-Mindset">
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >6</option>
+          <option >7</option>
+          <option >8</option>
+          <option >9</option>
+          <option >10</option>
+        </select>
+    </div>
+
+
+    <div class="output-score">
+      <button id="output-button" onclick="calculate_output_score()">View Output Score</button>
+    </div>
+
+    <div class="output-container">
+      <div>
+        <a>Creativity:</a>
+        <input type="text" readonly  id = "output_creativity"/>
+      </div>
+
+      <div>
+        <a>Critical Thinking:</a>
+        <input type="text" readonly  id = "output-critical-thinking"/>
+      </div>
+
+      <div>
+        <a>Communication:</a>
+        <input type="text" readonly  id = "output-communication"/>
+      </div>
+
+      <div>
+        <a>Collaboration:</a>
+        <input type="text" readonly  id = "output-collaboration"/>
+      </div>
+
+      <div>
+        <a>Mindfulness:</a>
+        <input type="text" readonly  id = "output-mindfulness"/>
+      </div>
+
+      <div>
+        <a>Curiousity:</a>
+        <input type="text" readonly  id = "output-curiousity"/>
+      </div>
+
+      <div>
+        <a>Courage:</a>
+        <input type="text" readonly  id = "output-courage"/>
+      </div>
+
+      <div>
+        <a>Resilience:</a>
+        <input type="text" readonly  id = "output-resilience"/>
+      </div>
+
+      <div>
+        <a>Ethics:</a>
+        <input type="text" readonly  id = "output-ethics"/>
+      </div>
+
+      <div>
+        <a>Leadership:</a>
+        <input type="text" readonly  id = "output-leadership"/>
+      </div>
+
+      <div>
+        <a>Metacognition:</a>
+        <input type="text" readonly  id = "output-metacognition"/>
+      </div>
+
+      <div>
+        <a>Growth Mindset:</a>
+        <input type="text" readonly  id = "output-growth-mindset"/>
+      </div>
+    </div>  
+  </body>
+</html>
