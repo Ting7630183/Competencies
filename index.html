@@ -5,6 +5,9 @@
     <title>Score Prediction</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
     <link href="styles/style-home.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+    <!-- <script src="plotly-2.12.1.min.js"></script> -->
+    
     <script src="js/calculator.js"> </script>
   </head>
   
@@ -13,232 +16,355 @@
       <a class="text-title">Competencies Predictor</a>
     </div>
 
-    <div class="selection-container">
-      <div class="character-container">
-        <label for="characters">Personality:</label>
-        <select name="characters" id="characters">
-          <option value="none">none</option>
-          <option value="openness">openness </option>
-          <option value="extraversion">extraversion</option>
-          <option value="conscientiousness">conscientiousness</option>
-          <option value="agreeableness">agreeableness</option>
-          <option value="neuroticism">neuroticism</option>
-        </select> 
+    <div class="top-container">
+      <div class="persona-containder">
+        <div class="persona-selection">
+          <label for="persona">Select Persona:</label>
+          <select name="persona" id="persona">
+            <option value="Anouchig">Anouchig</option>
+            <option value="LingLing">LingLing</option>
+            <option value="Bof">Bof</option>
+            <option value="Mignon">Mignon</option>
+            <option value="Ramez">Ramez</option>
+          </select>
+        </div> 
+
+        <div class="persona-descriptions">
+          <!-- <div><b>Typical Persona Descriptions:</b></div> -->
+          <div><b>Anouching:</b> very curious about world around them, likes to talk to adults or like minded peers.</div>
+          <div><b>LingLing:</b> Funny, talkative, hands on learner </div>
+          <div><b>Bof:</b> Gifted student classes, very intelligent, scored a 153 on his IQ test in the 1st grade and is well rounded.</div>
+          <div><b>Mignon:</b> Quiet, bookish, rule follower. </div>
+          <div><b>Ramez:</b> The below average student who isn’t cared for at home.</div>
+        </div>
+
       </div>
 
-      <div class="school-container">
-        <label for="school-type">School environment:</label>
-        <select name="school-type" id="school-type">
-          <option value="neutral">neutral</option>
-          <option value="good-school">good school</option>
-          <option value="bad-school">bad school</option>
-        </select>
-      </div>
+      <!-- <div class="input-score">
+        <div >
+          <a>Input score(optional)</a>
+        </div>
 
-      <div class="parental-involvement-container">
-        <label for="parental-type">parental involvement:</label>
-        <select name="parental-type" id="parental-type">
-          <option value="parent-neutral">neutral</option>
-          <option value="parent-high">positive</option>
-          <option value="parent-negative">negative</option>
-        </select>
-      </div>
-
-      <div class="theory-container">
-        <label for="theory-of-mind">theory of mind:</label>
-        <select name="theory-of-mind" id="theory-of-mind">
-          <option value="none">none</option>
-          <option value="high-resillience">high metacognition</option>
-          <option value="low-resillience">low resillience</option>
-        </select>
-      </div>
-
-      <div class="other-factor-container">
-        <label for="other-factor">other factors:</label>
-        <select name="other-factor" id="other-factor">
-          <option value="none">none</option>
-          <option value="bullying">bullied in middle school</option>
-          <option value="switch-school">frequent school switching</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="input-score">
-      <a>Input score</a>
-    </div>
-
-    <div class="competency-list-container">
-      <label for="Creativity">Creativity:</label>
-        <select name="Creativity" id="Creativity">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+        <div class="12-competencies">
+          <div class="competency-list-container">
+            <label for="Creativity">Creativity:</label>
+              <select name="Creativity" id="Creativity">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+            
+              <label for="Critical-thinking">Critical Thinking:</label>
+              <select name="Critical-thinking" id="Critical-thinking">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
       
-        <label for="Critical-thinking">Critical Thinking:</label>
-        <select name="Critical-thinking" id="Critical-thinking">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
-
-        <label for="Communication">Communication:</label>
-        <select name="Communication" id="Communication">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+              <label for="Communication">Communication:</label>
+              <select name="Communication" id="Communication">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+            
+              <label for="Collaboration">Collaboration:</label>
+              <select name="Collaboration" id="Collaboration">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
       
-        <label for="Collaboration">Collaboration:</label>
-        <select name="Collaboration" id="Collaboration">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+              <label for="Mindfulness">Mindfulness:</label>
+              <select name="Mindfulness" id="Mindfulness">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+      
+              <label for="Curiousity">Curiousity:</label>
+              <select name="Curiousity" id="Curiousity">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+      
+              <label for="Courage">Courage:</label>
+              <select name="Courage" id="Courage">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+      
+              <label for="Resilience">Resilience:</label>
+              <select name="Resilience" id="Resilience">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+      
+              <label for="Ethics">Ethics:</label>
+              <select name="Ethics" id="Ethics">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+      
+              <label for="Leadership">Leadership:</label>
+              <select name="Leadership" id="Leadership">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+       -->
+              <!-- <label for="Metacognition">Metacognition:</label>
+              <select name="Metacognition" id="Metacognition">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+      
+              <label for="Growth-Mindset">Growth Mindset:</label>
+              <select name="Growth-Mindset" id="Growth-Mindset">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+          </div>  -->
+        <!-- </div> -->
+      </div>
+    </div> 
 
-        <label for="Mindfulness">Mindfulness:</label>
-        <select name="Mindfulness" id="Mindfulness">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+    <div class="scenario-container">
+      <div class="scenario-one">
+        <div>Scenario One:</div>
+        <div class="scenario-options">
+          
+          <div class="school-container">
+            <label for="school-type1">School environment:</label>
+            <select name="school-type1" id="school-type1">
+              <option value="neutral">neutral</option>
+              <option value="good-school">good school</option>
+              <option value="bad-school">bad school</option>
+            </select>
+          </div>
+    
+          <div class="parental-involvement-container">
+            <label for="parental-type1">parental involvement:</label>
+            <select name="parental-type1" id="parental-type1">
+              <option value="parent-neutral">neutral</option>
+              <option value="parent-high">positive</option>
+              <option value="parent-negative">negative</option>
+            </select>
+          </div>
+  
+          <div class="other-factor-container">
+            <label for="other-factor1">other factors:</label>
+            <select name="other-factor1" id="other-factor1">
+              <option value="none">none</option>
+              <option value="bullying">bullied in middle school</option>
+              <option value="switch-school">frequent school switching</option>
+            </select>
+          </div>
+  
+          <div class="teacher-intervention">
+            <label for="intervention1">teacher intervention:</label>
+            <select name="intervention1" id="intervention1">
+              <option value="none">none</option>
+              <option value="positive-teacher-intervention">positive general intervention</option>
+            </select>
+          </div>
+        
+        <div class="scenario-one-time">
+          <label for="time1">Time:</label>
+              <select name="time1" id="scenario-one-time1">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+                <option >11</option>
+                <option >12</option>
+              </select>
+        </div>
+      </div>
+     
+        <div class="scenario-output">
+          <button id="output-button" onclick="calculate_output_score1()">View Output Score</button>
+          <div id="scenario-one-output" style="width:600px;height:250px;">
+          </div>
+        </div>  
 
-        <label for="Curiousity">Curiousity:</label>
-        <select name="Curiousity" id="Curiousity">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+      </div>
 
-        <label for="Courage">Courage:</label>
-        <select name="Courage" id="Courage">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
 
-        <label for="Resilience">Resilience:</label>
-        <select name="Resilience" id="Resilience">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+      <div class="scenario-two">
+        <div>Scenario Two:</div>
+        <div class="scenario-options">
+          
+          <div class="school-container">
+            <label for="school-type2">School environment:</label>
+            <select name="school-type2" id="school-type2">
+              <option value="neutral">neutral</option>
+              <option value="good-school">good school</option>
+              <option value="bad-school">bad school</option>
+            </select>
+          </div>
+    
+          <div class="parental-involvement-container">
+            <label for="parental-type2">parental involvement:</label>
+            <select name="parental-type2" id="parental-type2">
+              <option value="parent-neutral">neutral</option>
+              <option value="parent-high">positive</option>
+              <option value="parent-negative">negative</option>
+            </select>
+          </div>
+  
+          <div class="other-factor-container">
+            <label for="other-factor2">other factors:</label>
+            <select name="other-factor2" id="other-factor2">
+              <option value="none">none</option>
+              <option value="bullying">bullied in middle school</option>
+              <option value="switch-school">frequent school switching</option>
+            </select>
+          </div>
+  
+          <div class="teacher-intervention">
+            <label for="intervention2">teacher intervention:</label>
+            <select name="intervention2" id="intervention2">
+              <option value="none">none</option>
+              <option value="positive-teacher-intervention">positive general intervention</option>
+            </select>
+          </div>
 
-        <label for="Ethics">Ethics:</label>
-        <select name="Ethics" id="Ethics">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+          <div class="scenario-two-time">
+            <label for="time2">Time:</label>
+                <select name="time2" id="scenario-two-time2">
+                  <option >1</option>
+                  <option >2</option>
+                  <option >3</option>
+                  <option >4</option>
+                  <option >5</option>
+                  <option >6</option>
+                  <option >7</option>
+                  <option >8</option>
+                  <option >9</option>
+                  <option >10</option>
+                  <option >11</option>
+                  <option >12</option>
+                </select>
+          </div>
+        </div>
 
-        <label for="Leadership">Leadership:</label>
-        <select name="Leadership" id="Leadership">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+        <div class="scenario-output">
+          <button id="output-button-two" onclick="calculate_output_score2()">View Output Score</button>
+          <div id="scenario-two-output" style="width:600px;height:250px;">
+          </div>
+        </div> 
 
-        <label for="Metacognition">Metacognition:</label>
-        <select name="Metacognition" id="Metacognition">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
+        
+      </div>
 
-        <label for="Growth-Mindset">Growth Mindset:</label>
-        <select name="Growth-Mindset" id="Growth-Mindset">
-          <option >1</option>
-          <option >2</option>
-          <option >3</option>
-          <option >4</option>
-          <option >5</option>
-          <option >6</option>
-          <option >7</option>
-          <option >8</option>
-          <option >9</option>
-          <option >10</option>
-        </select>
     </div>
 
 
-    <div class="output-score">
+
+
+   
+
+    
+
+
+    <!-- <div class="output-score">
       <button id="output-button" onclick="calculate_output_score()">View Output Score</button>
     </div>
 
@@ -301,7 +427,7 @@
       <div>
         <a>Growth Mindset:</a>
         <input type="text" readonly  id = "output-growth-mindset"/>
-      </div>
+      </div> -->
     </div>  
   </body>
 </html>

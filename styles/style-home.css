@@ -15,6 +15,59 @@ body {
     margin-top:1em;
 }
 
+.persona-containder{
+    margin-top: 2em;
+    margin-left:2em;
+}
+.persona-selection{
+    margin-top: 1em;
+}
+/* .input-score{
+    background-color: lightsteelblue;
+} */
+
+.top-container{
+    background-color: bisque;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.persona-descriptions{
+    margin-top:0.8em;
+    font-size:0.9em;
+}
+
+.scenario-one{
+    margin-right:2em;
+    margin-left:2em;
+}
+
+/* .scenario-two{
+    margin-left:10em;
+} */
+
+
+.scenario-container{
+    padding-left:2em;
+    padding-top:2em;
+    padding-bottom: 2em;
+    background-color:lightblue;
+    display: flex;
+    flex-direction: wrap;
+    /* flex-wrap: wrap; */
+    justify-content:flex-start;
+    align-items: center;
+    
+}
+/* .scenario-options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+
 
 .selection-container {
     margin-top: 2em;
@@ -33,7 +86,7 @@ body {
     align-items: center;
 }
 .input-score{
-    margin-top: 4em;
+    margin-top: 1em;
     margin-left:2em;
 }
 .competency-list-container{
