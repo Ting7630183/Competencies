@@ -59,6 +59,12 @@ body {
     align-items: center;
     
 }
+.scenario-output3{
+    padding-left:24em;
+    padding-bottom:2em;
+    background-color:lightblue;
+
+}
 /* .scenario-options{
     display: flex;
     flex-direction: row;

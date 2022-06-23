@@ -278,9 +278,16 @@
         </div>
       </div>
      
-        <div class="scenario-output">
+        <div class="scenario-output1">
           <button id="output-button" onclick="calculate_output_score1()">View Output Score</button>
+          
           <div id="scenario-one-output" style="width:600px;height:250px;">
+           
+            <script>
+            OUTPUT1 = document.getElementById('scenario-one-output');
+            var data = [];
+            Plotly.newPlot(OUTPUT1, data);
+          </script>
           </div>
         </div>  
 
@@ -345,16 +352,31 @@
           </div>
         </div>
 
-        <div class="scenario-output">
+        <div class="scenario-output2">
           <button id="output-button-two" onclick="calculate_output_score2()">View Output Score</button>
           <div id="scenario-two-output" style="width:600px;height:250px;">
-          </div>
-        </div> 
+            <script>
+              OUTPUT2 = document.getElementById('scenario-two-output');
+              var data = [];
+              Plotly.newPlot(OUTPUT2, data);
+            </script>
 
+          </div>
+        </div>
         
       </div>
 
     </div>
+    <div class="scenario-output3">
+      <button id="output-button-three" onclick="calculate_output_score3()">View Output Score</button>
+      <div id="scenario-three-output" style="width:600px;height:250px;">
+        <script>
+          OUTPUT3 = document.getElementById('scenario-three-output');
+          var data = [];
+          Plotly.newPlot(OUTPUT3, data);
+        </script>
+      </div>
+    </div> 
 
 
 
