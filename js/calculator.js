@@ -28,18 +28,18 @@ const switch_school = [-2.4, -2.4, -2.4, -2.4, -2.4, -2.4, -13.2, -13.2, -2.4, -
 
 
 function calculate_output_score1() {
-    // let creativity = document.getElementById("Creativity").value
-    // let critical_thinking = document.getElementById("Critical-thinking").value
-    // let communication = document.getElementById("Communication").value
-    // let collaboration = document.getElementById("Collaboration").value
-    // let mindfulness = document.getElementById("Mindfulness").value
-    // let curiousity = document.getElementById("Curiousity").value
-    // let courage = document.getElementById("Courage").value
-    // let resilience = document.getElementById("Resilience").value
-    // let ethics = document.getElementById("Ethics").value
-    // let leadership = document.getElementById("Leadership").value
-    // let metacognition = document.getElementById("Metacognition").value
-    // let growth_mindset = document.getElementById("Growth-Mindset").value
+    let creativity = document.getElementById("Creativity").value
+    let critical_thinking = document.getElementById("Critical-thinking").value
+    let communication = document.getElementById("Communication").value
+    let collaboration = document.getElementById("Collaboration").value
+    let mindfulness = document.getElementById("Mindfulness").value
+    let curiousity = document.getElementById("Curiousity").value
+    let courage = document.getElementById("Courage").value
+    let resilience = document.getElementById("Resilience").value
+    let ethics = document.getElementById("Ethics").value
+    let leadership = document.getElementById("Leadership").value
+    let metacognition = document.getElementById("Metacognition").value
+    let growth_mindset = document.getElementById("Growth-Mindset").value
 
     let persona = document.getElementById("persona").value
 
@@ -196,8 +196,8 @@ function calculate_output_score1() {
       var final = {
         x: ['creativity', 'critical-thinking', 'communication', 'collaboration', 'mindfulness', 'curiousity',
             'courage', 'resilience', 'ethics', 'leadership', 'metacognition', 'growth-mindset'],
-        y: [final_score[0].toFixed(2), final_score[1].toFixed(2), final_score[2].toFixed(2), final_score[3].toFixed(2), final_score[4].toFixed(2), final_score[5].toFixed(2),
-        final_score[6].toFixed(2), final_score[7].toFixed(2), final_score[8].toFixed(2), final_score[9].toFixed(2), final_score[10].toFixed(2), final_score[11].toFixed(2)],
+        y: [final_score[0].toFixed(1), final_score[1].toFixed(1), final_score[2].toFixed(1), final_score[3].toFixed(1), final_score[4].toFixed(1), final_score[5].toFixed(1),
+        final_score[6].toFixed(1), final_score[7].toFixed(1), final_score[8].toFixed(1), final_score[9].toFixed(1), final_score[10].toFixed(1), final_score[11].toFixed(1)],
         type: 'scatter',
         name: 'final'
       };
@@ -410,8 +410,8 @@ function calculate_output_score3() {
       var scenario_one = {
         x: ['creativity', 'critical-thinking', 'communication', 'collaboration', 'mindfulness', 'curiousity',
             'courage', 'resilience', 'ethics', 'leadership', 'metacognition', 'growth-mindset'],
-        y: [final_score1[0].toFixed(2), final_score1[1].toFixed(2), final_score1[2].toFixed(2), final_score1[3].toFixed(2), final_score1[4].toFixed(2), final_score1[5].toFixed(2),
-        final_score1[6].toFixed(2), final_score1[7].toFixed(2), final_score1[8].toFixed(2), final_score1[9].toFixed(2), final_score1[10].toFixed(2), final_score1[11].toFixed(2)],
+        y: [final_score1[0].toFixed(1), final_score1[1].toFixed(1), final_score1[2].toFixed(1), final_score1[3].toFixed(1), final_score1[4].toFixed(1), final_score1[5].toFixed(1),
+        final_score1[6].toFixed(1), final_score1[7].toFixed(1), final_score1[8].toFixed(1), final_score1[9].toFixed(1), final_score1[10].toFixed(1), final_score1[11].toFixed(1)],
         type: 'scatter',
         name: 'scenario one'
       };
@@ -419,8 +419,8 @@ function calculate_output_score3() {
       var scenarion_two = {
         x: ['creativity', 'critical-thinking', 'communication', 'collaboration', 'mindfulness', 'curiousity',
             'courage', 'resilience', 'ethics', 'leadership', 'metacognition', 'growth-mindset'],
-        y: [final_score2[0].toFixed(2), final_score2[1].toFixed(2), final_score2[2].toFixed(2), final_score2[3].toFixed(2), final_score2[4].toFixed(2), final_score2[5].toFixed(2),
-        final_score2[6].toFixed(2), final_score2[7].toFixed(2), final_score2[8].toFixed(2), final_score2[9].toFixed(2), final_score2[10].toFixed(2), final_score2[11].toFixed(2)],
+        y: [final_score2[0].toFixed(1), final_score2[1].toFixed(1), final_score2[2].toFixed(1), final_score2[3].toFixed(1), final_score2[4].toFixed(1), final_score2[5].toFixed(1),
+        final_score2[6].toFixed(1), final_score2[7].toFixed(1), final_score2[8].toFixed(1), final_score2[9].toFixed(1), final_score2[10].toFixed(1), final_score2[11].toFixed(1)],
         type: 'scatter',
         name: 'scenario two'
       };
@@ -530,8 +530,8 @@ function calculate_output_score2() {
     var original = {
         x: ['creativity', 'critical-thinking', 'communication', 'collaboration', 'mindfulness', 'curiousity',
             'courage', 'resilience', 'ethics', 'leadership', 'metacognition', 'growth-mindset'],
-        y: [starting_score[0].toFixed(2), starting_score[1].toFixed(2), starting_score[2].toFixed(2), starting_score[3].toFixed(2), starting_score[4].toFixed(2), starting_score[5].toFixed(2),
-        starting_score[6].toFixed(2), starting_score[7].toFixed(2), starting_score[8].toFixed(2), starting_score[9].toFixed(2), starting_score[10].toFixed(2), starting_score[11].toFixed(2)],
+        y: [starting_score[0], starting_score[1], starting_score[2], starting_score[3], starting_score[4], starting_score[5],
+        starting_score[6], starting_score[7], starting_score[8], starting_score[9], starting_score[10], starting_score[11]],
         type: 'scatter',
         name: 'original'
         // y.update_yaxes(fixedrange=10)
@@ -541,8 +541,8 @@ function calculate_output_score2() {
       var final = {
         x: ['creativity', 'critical-thinking', 'communication', 'collaboration', 'mindfulness', 'curiousity',
             'courage', 'resilience', 'ethics', 'leadership', 'metacognition', 'growth-mindset'],
-        y: [final_score[0].toFixed(2), final_score[1].toFixed(2), final_score[2].toFixed(2), final_score[3].toFixed(2), final_score[4].toFixed(2), final_score[5].toFixed(2),
-        final_score[6].toFixed(2), final_score[7].toFixed(2), final_score[8].toFixed(2), final_score[9].toFixed(2), final_score[10].toFixed(2), final_score[11].toFixed(2)],
+        y: [final_score[0].toFixed(1), final_score[1].toFixed(1), final_score[2].toFixed(1), final_score[3].toFixed(1), final_score[4].toFixed(1), final_score[5].toFixed(1),
+        final_score[6].toFixed(1), final_score[7].toFixed(1), final_score[8].toFixed(1), final_score[9].toFixed(1), final_score[10].toFixed(1), final_score[11].toFixed(1)],
         type: 'scatter',
         name: 'final'
       };
