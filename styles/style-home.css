@@ -12,7 +12,8 @@ body {
     font-size: 2em;
     /* text-align: center; */
     margin-left: 1em;
-    margin-top:1em;
+    padding-top: 0.3em;
+    text-align: left;
 }
 
 .persona-containder{
@@ -42,9 +43,10 @@ body {
     margin-left:2em;
 }
 
-/* .scenario-two{
-    margin-left:10em;
-} */
+.scenario-output1{
+    margin-left: 1em;
+
+}
 
 
 .scenario-container{
@@ -72,6 +74,10 @@ body {
     justify-content: space-around;
     align-items: center;
 } */
+
+.scenario-two{
+    padding-left:10em;
+}
 
 
 
