@@ -40,17 +40,22 @@ body {
 
 .scenario-one{
     margin-right:2em;
-    margin-left:2em;
+    /* margin-left:2em; */
 }
 
 .scenario-output1{
     margin-left: 1em;
 
 }
+.main-container{
+    padding-left:8em;
+    padding-top:2em;
+    padding-bottom: 2em;
+    background-color:lightblue;
+}
 
 
 .scenario-container{
-    padding-left:2em;
     padding-top:2em;
     padding-bottom: 2em;
     background-color:lightblue;
@@ -58,14 +63,17 @@ body {
     flex-direction: wrap;
     /* flex-wrap: wrap; */
     justify-content:flex-start;
-    align-items: center;
-    
+    align-items: center;  
 }
 .scenario-output3{
     padding-left:14em;
     padding-bottom:2em;
     background-color:lightblue;
 
+}
+
+#scenario-one-output1, #scenario-one-output2, #scenario-one-output3{
+    padding-bottom: 2em;
 }
 /* .scenario-options{
     display: flex;
