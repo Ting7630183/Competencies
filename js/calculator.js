@@ -441,7 +441,10 @@ function calculate_output_score() {
           array: [creativity_diff1, critical_thinking_diff1, communication_diff1, collaboration_diff1],
           visible: true
         },
-        type: 'bar'
+        type: 'bar',
+        marker: {
+          color: 'rgb(191,191,191)'
+        }
       };
 
       var trace2 = {
@@ -453,7 +456,10 @@ function calculate_output_score() {
           array: [creativity_diff2, critical_thinking_diff2, communication_diff2, collaboration_diff2],
           visible: true
         },
-        type: 'bar'
+        type: 'bar',
+        marker: {
+          color: 'rgb(46,204,113)'
+        }
       };
 
       var layout = {
@@ -492,7 +498,10 @@ function calculate_output_score() {
           array: [mindfullness_diff1, curiousity_diff1, courage_diff1, resilience_diff1, ethics_diff1, leadership_diff1],
           visible: true
         },
-        type: 'bar'
+        type: 'bar',
+        marker: {
+          color: 'rgb(191,191,191)'
+        }
       };
 
       var trace4 = {
@@ -505,7 +514,10 @@ function calculate_output_score() {
           array: [mindfullness_diff2, curiousity_diff2, courage_diff2, resilience_diff2, ethics_diff2, leadership_diff2],
           visible: true
         },
-        type: 'bar'
+        type: 'bar',
+        marker: {
+          color: 'rgb(46,204,113)'
+        }
       };
 
       var layout = {
@@ -531,7 +543,10 @@ function calculate_output_score() {
           array: [metacognition_diff1, growth_mindset_diff1],
           visible: true
         },
-        type: 'bar'
+        type: 'bar',
+        marker: {
+          color: 'rgb(191,191,191)'
+        }
       };
 
       var trace6 = {
@@ -543,7 +558,10 @@ function calculate_output_score() {
           array: [metacognition_diff2, growth_mindset_diff2],
           visible: true
         },
-        type: 'bar'
+        type: 'bar',
+        marker: {
+          color: 'rgb(46,204,113)'
+        }
       };
 
       var layout = {
