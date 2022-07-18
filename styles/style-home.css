@@ -33,15 +33,7 @@ body {
     padding-bottom: 2em;
 }
 
-.persona-descriptions{
-    margin-top:0.8em;
-    font-size:0.9em;
-}
 
-.scenario-one{
-    margin-right:2em;
-    /* margin-left:2em; */
-}
 
 .scenario-output1{
     margin-left: 1em;
@@ -61,10 +53,11 @@ body {
     background-color:lightblue;
     display: flex;
     flex-direction: wrap;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content:flex-start;
     align-items: center;  
-}
+}  
+
 .scenario-output3{
     padding-left:14em;
     padding-bottom:2em;

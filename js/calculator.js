@@ -330,7 +330,7 @@ function calculate_output_score() {
         name: 'Original',
         error_y: {
           type: 'data',
-          array: [0, 0, 0, 0],
+          array: [0.5, 0.5, 0.5, 0.5],
           visible: true
         },
         type: 'bar'
@@ -360,7 +360,7 @@ function calculate_output_score() {
       };
 
       var layout = {
-        title:'Skill Precdtion',
+        title:'Skill Prediction',
         barmode: 'group'
       };
       var data0 = [trace1, trace2, trace3];
@@ -369,45 +369,45 @@ function calculate_output_score() {
 
 
       var trace4 = {
-        x: ['Mindfulness', 'Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
-        y: [min_max_avg_mindfulness0[2], min_max_avg_curiousity0[2], min_max_avg_courage0[2], min_max_avg_resilience0[2],
+        x: ['Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
+        y: [ min_max_avg_curiousity0[2], min_max_avg_courage0[2], min_max_avg_resilience0[2],
             min_max_avg_ethics0[2], min_max_avg_leadership0[2]],
         name: 'Original',
         error_y: {
           type: 'data',
-          array: [0, 0, 0, 0],
+          array: [1, 0.5, 0.5, 0.5, 0.5],
           visible: true
         },
         type: 'bar'
       };
       var trace5 = {
-        x: ['Mindfulness', 'Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
-        y: [min_max_avg_mindfulness1[2], min_max_avg_curiousity1[2], min_max_avg_courage1[2], min_max_avg_resilience1[2],
+        x: ['Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
+        y: [ min_max_avg_curiousity1[2], min_max_avg_courage1[2], min_max_avg_resilience1[2],
         min_max_avg_ethics1[2], min_max_avg_leadership1[2]],
         name: 'Without Intervention',
         error_y: {
           type: 'data',
-          array: [0.5, 1, 2, 0.5, 1, 1],
+          array: [1, 2, 0.5, 1, 1],
           visible: true
         },
         type: 'bar'
       };
 
       var trace6 = {
-        x: ['Mindfulness', 'Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
-        y: [min_max_avg_mindfulness2[2], min_max_avg_curiousity2[2], min_max_avg_courage2[2], min_max_avg_resilience2[2],
+        x: ['Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
+        y: [ min_max_avg_curiousity2[2], min_max_avg_courage2[2], min_max_avg_resilience2[2],
         min_max_avg_ethics2[2], min_max_avg_leadership2[2]],
         name: 'With Intervention',
         error_y: {
           type: 'data',
-          array: [0.5, 1, 2, 1, 1, 1.5],
+          array: [1, 2, 1, 1, 1.5],
           visible: true
         },
         type: 'bar'
       };
 
       var layout = {
-        title:'Character Precdtion',
+        title:'Character Prediction',
         barmode: 'group'
       };
       var data1 = [trace4, trace5, trace6];
@@ -415,23 +415,24 @@ function calculate_output_score() {
 
 
       var trace7 = {
-        x: ['Metacognition', 'Growth-mindset'],
-        y: [min_max_avg_metacognition0[2],min_max_avg_growth_mindset0[2]],
+        x: ['Mindfulness', 'Metacognition', 'Growth-mindset'],
+        y: [min_max_avg_mindfulness0[2], min_max_avg_metacognition0[2],min_max_avg_growth_mindset0[2]],
         name: 'Original',
         error_y: {
           type: 'data',
-          array: [0, 0, 0, 0],
+          array: [0.5, 1, 0.5],
           visible: true
         },
         type: 'bar'
       };
       var trace8 = {
-        x: ['Metacognition', 'Growth-mindset'],
-        y: [min_max_avg_metacognition1[2], min_max_avg_growth_mindset1[2]],
+        x: ['Mindfulness', 'Metacognition', 'Growth-mindset'],
+        y: [min_max_avg_mindfulness1[2], min_max_avg_metacognition1[2], min_max_avg_growth_mindset1[2]],
         name: 'Without Intervention',
         error_y: {
           type: 'data',
-          array: [ min_max_avg_metacognition1[1] - min_max_avg_metacognition1[0],
+          array: [ min_max_avg_mindfulness1[1] - min_max_avg_mindfulness1[0],
+                   min_max_avg_metacognition1[1] - min_max_avg_metacognition1[0],
                    min_max_avg_growth_mindset1[1] - min_max_avg_growth_mindset1[0]],
           visible: true
         },
@@ -439,12 +440,13 @@ function calculate_output_score() {
       };
 
       var trace9 = {
-        x: ['Metacognition', 'Growth-mindset'],
-        y: [min_max_avg_metacognition2[2],min_max_avg_growth_mindset2[2]],
+        x: ['Mindfulness', 'Metacognition', 'Growth-mindset'],
+        y: [min_max_avg_mindfulness2[2], min_max_avg_metacognition2[2], min_max_avg_growth_mindset2[2]],
         name: 'With Intervention',
         error_y: {
           type: 'data',
-          array: [ min_max_avg_metacognition2[1] - min_max_avg_metacognition2[0],
+          array: [ min_max_avg_mindfulness2[1] - min_max_avg_mindfulness2[0],
+                   min_max_avg_metacognition2[1] - min_max_avg_metacognition2[0],
                    min_max_avg_growth_mindset2[1] - min_max_avg_growth_mindset2[0]],
           visible: true
         },
@@ -452,16 +454,11 @@ function calculate_output_score() {
       };
 
       var layout = {
-        title:'Meta-learning Precdtion',
+        title:'Meta-Learning Prediction',
         barmode: 'group'
       };
       var data2 = [trace7, trace8, trace9];
       Plotly.newPlot(OUTPUT3, data2, layout);
-
-
-      
-
-
     
 }
 
