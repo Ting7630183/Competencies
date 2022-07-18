@@ -16,24 +16,12 @@ body {
     text-align: left;
 }
 
-.persona-containder{
-    margin-top: 2em;
-    margin-left:2em;
-}
-.persona-selection{
-    margin-top: 1em;
-}
-/* .input-score{
-    background-color: lightsteelblue;
-} */
 
 .top-container{
     background-color: bisque;
     padding-top: 1em;
     padding-bottom: 2em;
 }
-
-
 
 .scenario-output1{
     margin-left: 1em;
@@ -46,51 +34,29 @@ body {
     background-color:lightblue;
 }
 
-
-.scenario-container{
-    padding-top:2em;
-    padding-bottom: 2em;
-    background-color:lightblue;
+.selection-container{
+    font-size: 1.2em;
     display: flex;
     flex-direction: wrap;
     flex-wrap: wrap;
     justify-content:flex-start;
     align-items: center;  
-}  
+}
+.teacher-intervention{
+    padding-left: 4em;
+}
 
-.scenario-output3{
-    padding-left:14em;
-    padding-bottom:2em;
-    background-color:lightblue;
+.run-button{
+    padding-left:6em;
 
 }
+
 
 #scenario-one-output1, #scenario-one-output2, #scenario-one-output3{
     padding-bottom: 2em;
 }
-/* .scenario-options{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-} */
-
-.scenario-two{
-    padding-left:10em;
-}
 
 
-
-.selection-container {
-    margin-top: 2em;
-    margin-left:2em;
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content:flex-start;
-    align-items: center;
-}
 .output-container{
     display: flex;
     flex-direction: row;
@@ -98,25 +64,20 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.input-score{
-    margin-top: 1em;
-    margin-left:2em;
-}
-.competency-list-container{
-    margin-left:2em;
+
+#output-button{
+    margin-right:4em;
+    text-align: center;
+    color:black; 
+    background-color: white; 
+    border: 0.5em; 
+    border-radius: 0.5em;  
+    padding: 0.4em 1em 0.4em 1em;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2), 0 6px 18px 0 rgba(0,0,0,0.19);
 }
 
-#Creativity, #Critical-thinking, #Communication, #Collaboration, #Mindfulness, #Curiousity, #Courage, #Resilience, #Ethics, #Leadership, #Metacognition, #Growth-Mindset {
-    margin-right:1em;
-}
 
-.output-score{
-    margin-top: 4em;
-    margin-left:2em;
-}
-
-.output-container{
-    margin-left:8em;
-
-}
 

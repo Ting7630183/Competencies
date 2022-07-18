@@ -17,43 +17,37 @@
     </div>
 
     <div class="main-container">
-      <div class="school-container">
-        <label for="school-type">School Environment:</label>
-        <select name="school-type" id="school-type">
-          <option value="neutral">average School</option>
-          <option value="good-school">high-performing School</option>
-          <option value="bad-school">low-performing School</option>
-        </select>
-      </div>
-
-      <div class="scenario-container">
-        <!-- <div class="scenario-one">
-          <div class="scenario-options">
-    
-            <div class="intervention">
-              <label for="intervention1">Without Intervention:</label>
-            </div> 
-          </div>
-        </div> -->
-  
-        <div class="scenario-two">
-          <div class="scenario-options">
-    
-            <div class="teacher-intervention">
-              <label for="intervention2">Intervention:</label>
-              <select name="intervention2" id="intervention2">
-                <option value="skill">skill dimension</option>
-                <option value="character">character dimension</option>
-                <option value="meta">meta-learning dimension</option> 
-              </select>
-            </div>
-          </div>
+      <div class="selection-container">
+        <div class="school-container">
+          <label for="school-type">School Environment:</label>
+          <select name="school-type" id="school-type">
+            <option value="neutral">average School</option>
+            <option value="good-school">high-performing School</option>
+            <option value="bad-school">low-performing School</option>
+          </select>
         </div>
-      </div> 
+  
+        <div class="teacher-intervention">
+          <label for="intervention2">Intervention:</label>
+          <select name="intervention2" id="intervention2">
+            <option value="skill">skill dimension</option>
+            <option value="character">character dimension</option>
+            <option value="meta">meta-learning dimension</option> 
+          </select>
+        </div>
+
+        <div class="run-button">
+          <button id="output-button" onclick="calculate_output_score()">Run the Simulation</button>
+        </div>
+
+      </div>
+      
     </div>
+      
+
 
     <div class="scenario-output1">
-          <button id="output-button" onclick="calculate_output_score()">Run the simulation</button>
+          
           
           <div id="scenario-one-output1" style="width:1400px;height:500px;"></div>
           <div id="scenario-one-output2" style="width:1400px;height:500px;"></div>

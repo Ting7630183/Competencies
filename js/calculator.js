@@ -77,12 +77,13 @@ function maxMinAvg(arr) {
          min = value;
        
    })
-  return [min, max, avg];
+  return [min.toFixed(1), max.toFixed(1), avg.toFixed(1)];
   }
 
 
 function calculate_output_score() {
     var starting_opportunity_1 = convert_original_score_to_opportunity(original_1)
+    console.log("starting_opporitunity_1 is:.....", starting_opportunity_1)
     var starting_opportunity_2 = convert_original_score_to_opportunity(original_2)
     var starting_opportunity_3 = convert_original_score_to_opportunity(original_3)
     var starting_opportunity_4 = convert_original_score_to_opportunity(original_4)
@@ -174,6 +175,114 @@ function calculate_output_score() {
     var final_opportunity20 = calculate_final_opportunity(starting_opportunity_20, add_opportunity1)
     var final_opportunity21 = calculate_final_opportunity(starting_opportunity_21, add_opportunity1)
 
+    var final_creativity1 = [final_opportunity1[0], final_opportunity2[0], final_opportunity3[0], final_opportunity4[0],
+    final_opportunity5[0], final_opportunity6[0], final_opportunity7[0], final_opportunity8[0], final_opportunity9[0],
+    final_opportunity10[0], final_opportunity11[0], final_opportunity12[0], final_opportunity13[0], final_opportunity14[0],
+    final_opportunity15[0], final_opportunity16[0], final_opportunity17[0], final_opportunity18[0], final_opportunity19[0],
+    final_opportunity20[0], final_opportunity21[0]]
+
+    min_max_avg_creativity1 = maxMinAvg(final_creativity1)
+    console.log('min_max_avg_creativity1 is:.......', min_max_avg_creativity1)
+
+    var final_critical_thinking1 = [final_opportunity1[1], final_opportunity2[1], final_opportunity3[1], final_opportunity4[1],
+    final_opportunity5[1], final_opportunity6[1], final_opportunity7[1], final_opportunity8[1], final_opportunity9[1],
+    final_opportunity10[1], final_opportunity11[1], final_opportunity12[1], final_opportunity13[1], final_opportunity14[1],
+    final_opportunity15[1], final_opportunity16[1], final_opportunity17[1], final_opportunity18[1], final_opportunity19[1],
+    final_opportunity20[1], final_opportunity21[1]]
+
+    min_max_avg_critical_thinking1 = maxMinAvg(final_critical_thinking1)
+    console.log('min_max_avg_critical_thinking1 is:.......', min_max_avg_critical_thinking1)
+
+    var final_communication1 = [final_opportunity1[2], final_opportunity2[2], final_opportunity3[2], final_opportunity4[2],
+    final_opportunity5[2], final_opportunity6[2], final_opportunity7[2], final_opportunity8[2], final_opportunity9[2],
+    final_opportunity10[2], final_opportunity11[2], final_opportunity12[2], final_opportunity13[2], final_opportunity14[2],
+    final_opportunity15[2], final_opportunity16[2], final_opportunity17[2], final_opportunity18[2], final_opportunity19[2],
+    final_opportunity20[2], final_opportunity21[2]]
+
+    min_max_avg_communication1 = maxMinAvg(final_communication1)
+    console.log('min_max_avg_communication1 is:.......', min_max_avg_communication1)
+
+    var final_collaboration1 = [final_opportunity1[3], final_opportunity2[3], final_opportunity3[3], final_opportunity4[3],
+    final_opportunity5[3], final_opportunity6[3], final_opportunity7[3], final_opportunity8[3], final_opportunity9[3],
+    final_opportunity10[3], final_opportunity11[3], final_opportunity12[3], final_opportunity13[3], final_opportunity14[3],
+    final_opportunity15[3], final_opportunity16[3], final_opportunity17[3], final_opportunity18[3], final_opportunity19[3],
+    final_opportunity20[3], final_opportunity21[3]]
+
+    min_max_avg_collaboration1 = maxMinAvg(final_collaboration1)
+    console.log('min_max_avg_collaboration1 is:.......', min_max_avg_collaboration1)
+
+    var final_mindfulness1 = [final_opportunity1[4], final_opportunity2[4], final_opportunity3[4], final_opportunity4[4],
+    final_opportunity5[4], final_opportunity6[4], final_opportunity7[4], final_opportunity8[4], final_opportunity9[4],
+    final_opportunity10[4], final_opportunity11[4], final_opportunity12[4], final_opportunity13[4], final_opportunity14[4],
+    final_opportunity15[4], final_opportunity16[4], final_opportunity17[4], final_opportunity18[4], final_opportunity19[4],
+    final_opportunity20[4], final_opportunity21[4]]
+
+    min_max_avg_mindfulness1 = maxMinAvg(final_mindfulness1)
+    console.log('min_max_avg_mindfulness1 is:.......', min_max_avg_mindfulness1)
+
+    var final_curiousity1 = [final_opportunity1[5], final_opportunity2[5], final_opportunity3[5], final_opportunity4[5],
+    final_opportunity5[5], final_opportunity6[5], final_opportunity7[5], final_opportunity8[5], final_opportunity9[5],
+    final_opportunity10[5], final_opportunity11[5], final_opportunity12[5], final_opportunity13[5], final_opportunity14[5],
+    final_opportunity15[5], final_opportunity16[5], final_opportunity17[5], final_opportunity18[5], final_opportunity19[5],
+    final_opportunity20[5], final_opportunity21[5]]
+
+    min_max_avg_curiousity1 = maxMinAvg(final_curiousity1)
+    console.log('min_max_avg_curiousity1 is:.......', min_max_avg_curiousity1)
+
+    var final_courage1 = [final_opportunity1[6], final_opportunity2[6], final_opportunity3[6], final_opportunity4[6],
+    final_opportunity5[6], final_opportunity6[6], final_opportunity7[6], final_opportunity8[6], final_opportunity9[6],
+    final_opportunity10[6], final_opportunity11[6], final_opportunity12[6], final_opportunity13[6], final_opportunity14[6],
+    final_opportunity15[6], final_opportunity16[6], final_opportunity17[6], final_opportunity18[6], final_opportunity19[6],
+    final_opportunity20[6], final_opportunity21[6]]
+
+    min_max_avg_courage1= maxMinAvg(final_courage1)
+    console.log('min_max_avg_courage1 is:.......', min_max_avg_courage1)
+
+    var final_resilience1 = [final_opportunity1[7], final_opportunity2[7], final_opportunity3[7], final_opportunity4[7],
+    final_opportunity5[7], final_opportunity6[7], final_opportunity7[7], final_opportunity8[7], final_opportunity9[7],
+    final_opportunity10[7], final_opportunity11[7], final_opportunity12[7], final_opportunity13[7], final_opportunity14[7],
+    final_opportunity15[7], final_opportunity16[7], final_opportunity17[7], final_opportunity18[7], final_opportunity19[7],
+    final_opportunity20[7], final_opportunity21[7]]
+
+    min_max_avg_resilience1= maxMinAvg(final_resilience1)
+    console.log('min_max_avg_resilience1 is:.......', min_max_avg_resilience1)
+
+    var final_ethics1 = [final_opportunity1[8], final_opportunity2[8], final_opportunity3[8], final_opportunity4[8],
+    final_opportunity5[8], final_opportunity6[8], final_opportunity7[8], final_opportunity8[8], final_opportunity9[8],
+    final_opportunity10[8], final_opportunity11[8], final_opportunity12[8], final_opportunity13[8], final_opportunity14[8],
+    final_opportunity15[8], final_opportunity16[8], final_opportunity17[8], final_opportunity18[8], final_opportunity19[8],
+    final_opportunity20[8], final_opportunity21[8]]
+
+    min_max_avg_ethics1 = maxMinAvg(final_ethics1)
+    console.log('min_max_avg_ethics1 is:.......', min_max_avg_ethics1)
+
+    var final_leadership1 = [final_opportunity1[9], final_opportunity2[9], final_opportunity3[9], final_opportunity4[9],
+    final_opportunity5[9], final_opportunity6[9], final_opportunity7[9], final_opportunity8[9], final_opportunity9[9],
+    final_opportunity10[9], final_opportunity11[9], final_opportunity12[9], final_opportunity13[9], final_opportunity14[9],
+    final_opportunity15[9], final_opportunity16[9], final_opportunity17[9], final_opportunity18[9], final_opportunity19[9],
+    final_opportunity20[9], final_opportunity21[9]]
+
+    min_max_avg_leadership1 = maxMinAvg(final_leadership1)
+    console.log('min_max_avg_leadership1 is:.......', min_max_avg_leadership1)
+
+    var final_metacognition1 = [final_opportunity1[10], final_opportunity2[10], final_opportunity3[10], final_opportunity4[10],
+    final_opportunity5[10], final_opportunity6[10], final_opportunity7[10], final_opportunity8[10], final_opportunity9[10],
+    final_opportunity10[10], final_opportunity11[10], final_opportunity12[10], final_opportunity13[10], final_opportunity14[10],
+    final_opportunity15[10], final_opportunity16[10], final_opportunity17[10], final_opportunity18[10], final_opportunity19[10],
+    final_opportunity20[10], final_opportunity21[10]]
+
+    min_max_avg_metacognition1 = maxMinAvg(final_metacognition1)
+    console.log('min_max_avg_metacognition1 is:.......', min_max_avg_metacognition1)
+
+    var final_growth_mindset1 = [final_opportunity1[11], final_opportunity2[11], final_opportunity3[11], final_opportunity4[11],
+    final_opportunity5[11], final_opportunity6[11], final_opportunity7[11], final_opportunity8[11], final_opportunity9[11],
+    final_opportunity10[11], final_opportunity11[11], final_opportunity12[11], final_opportunity13[11], final_opportunity14[11],
+    final_opportunity15[11], final_opportunity16[11], final_opportunity17[11], final_opportunity18[11], final_opportunity19[11],
+    final_opportunity20[11], final_opportunity21[11]]
+
+    min_max_avg_growth_mindset1 = maxMinAvg(final_growth_mindset1)
+    console.log('min_max_avg_growth_mindset1 is:.......', min_max_avg_growth_mindset1)
+
     var f_opportunity1 = calculate_final_opportunity(starting_opportunity_1, add_opportunity2)
     var f_opportunity2 = calculate_final_opportunity(starting_opportunity_2, add_opportunity2)
     var f_opportunity3 = calculate_final_opportunity(starting_opportunity_3, add_opportunity2)
@@ -196,164 +305,152 @@ function calculate_output_score() {
     var f_opportunity20 = calculate_final_opportunity(starting_opportunity_20, add_opportunity2)
     var f_opportunity21 = calculate_final_opportunity(starting_opportunity_21, add_opportunity2)
 
-    var final1 = calculate_final_score(final_opportunity1)
-    console.log('final1 is:', final1)
-    var final2 = calculate_final_score(final_opportunity2)
-    var final3 = calculate_final_score(final_opportunity3)
-    var final4 = calculate_final_score(final_opportunity4)
-    var final5 = calculate_final_score(final_opportunity5)
-    var final6 = calculate_final_score(final_opportunity6)
-    var final7 = calculate_final_score(final_opportunity7)
-    var final8 = calculate_final_score(final_opportunity8)
-    var final9 = calculate_final_score(final_opportunity9)
-    var final10 = calculate_final_score(final_opportunity10)
-    var final11 = calculate_final_score(final_opportunity11)
-    var final12 = calculate_final_score(final_opportunity12)
-    var final13 = calculate_final_score(final_opportunity13)
-    var final14 = calculate_final_score(final_opportunity14)
-    var final15 = calculate_final_score(final_opportunity15)
-    var final16 = calculate_final_score(final_opportunity16)
-    var final17 = calculate_final_score(final_opportunity17)
-    var final18 = calculate_final_score(final_opportunity18)
-    var final19 = calculate_final_score(final_opportunity19)
-    var final20 = calculate_final_score(final_opportunity20)
-    var final21 = calculate_final_score(final_opportunity21)
+    var final_creativity2 = [f_opportunity1[0], f_opportunity2[0], f_opportunity3[0], f_opportunity4[0],
+    f_opportunity5[0], f_opportunity6[0], f_opportunity7[0], f_opportunity8[0], f_opportunity9[0],
+    f_opportunity10[0], f_opportunity11[0], f_opportunity12[0], f_opportunity13[0], f_opportunity14[0],
+    f_opportunity15[0], f_opportunity16[0], f_opportunity17[0], f_opportunity18[0], f_opportunity19[0],
+    f_opportunity20[0], f_opportunity21[0]]
 
-    var f1 = calculate_final_score(f_opportunity1)
-    console.log('f1 is:', f1)
-    var f2 = calculate_final_score(f_opportunity2)
-    var f3 = calculate_final_score(f_opportunity3)
-    var f4 = calculate_final_score(f_opportunity4)
-    var f5 = calculate_final_score(f_opportunity5)
-    var f6 = calculate_final_score(f_opportunity6)
-    var f7 = calculate_final_score(f_opportunity7)
-    var f8 = calculate_final_score(f_opportunity8)
-    var f9 = calculate_final_score(f_opportunity9)
-    var f10 = calculate_final_score(f_opportunity10)
-    var f11 = calculate_final_score(f_opportunity11)
-    var f12 = calculate_final_score(f_opportunity12)
-    var f13 = calculate_final_score(f_opportunity13)
-    var f14 = calculate_final_score(f_opportunity14)
-    var f15 = calculate_final_score(f_opportunity15)
-    var f16 = calculate_final_score(f_opportunity16)
-    var f17 = calculate_final_score(f_opportunity17)
-    var f18 = calculate_final_score(f_opportunity18)
-    var f19 = calculate_final_score(f_opportunity19)
-    var f20 = calculate_final_score(f_opportunity20)
-    var f21 = calculate_final_score(f_opportunity21)
+    min_max_avg_creativity2 = maxMinAvg(final_creativity2)
+    console.log('min_max_avg_creativity2 is:.......', min_max_avg_creativity2)
 
-    var creativity0 = [original_1[0], original_2[0], original_3[0],original_4[0],original_5[0],original_6[0],original_7[0],original_8[0],original_9[0],original_10[0],original_11[0],original_12[0]]
-    var min_max_avg_creativity0 = maxMinAvg(creativity0)
-    var critical_thinking0 = [original_1[1], original_2[1], original_3[1],original_4[1],original_5[1],original_6[1],original_7[1],original_8[1],original_9[1],original_10[1],original_11[1],original_12[1]]
-    var min_max_avg_critical_thinking0 = maxMinAvg(critical_thinking0)
-    var communication0 = [original_1[2], original_2[2], original_3[2],original_4[2],original_5[2],original_6[2],original_7[2],original_8[2],original_9[2],original_10[2],original_11[2],original_12[2]]
-    var min_max_avg_communication0 = maxMinAvg(communication0)
-    var collaboration0 = [original_1[3], original_2[3], original_3[3],original_4[3],original_5[3],original_6[3],original_7[3],original_8[3],original_9[3],original_10[3],original_11[3],original_12[3]]
-    var min_max_avg_collaboration0 = maxMinAvg(collaboration0)
-    var mindfulness0 = [original_1[4], original_2[4], original_3[4],original_4[4],original_5[4],original_6[4],original_7[4],original_8[4],original_9[4],original_10[4],original_11[4],original_12[4]]
-    var min_max_avg_mindfulness0 = maxMinAvg(mindfulness0)
-    var curiousity0 = [original_1[5], original_2[5], original_3[5],original_4[5],original_5[5],original_6[5],original_7[5],original_8[5],original_9[5],original_10[5],original_11[5],original_12[5]]
-    var min_max_avg_curiousity0 = maxMinAvg(curiousity0)
-    var courage0 = [original_1[6], original_2[6], original_3[6],original_4[6],original_5[6],original_6[6],original_7[6],original_8[6],original_9[6],original_10[6],original_11[6],original_12[6]]
-    var min_max_avg_courage0 = maxMinAvg(courage0)
-    var resilience0 = [original_1[7], original_2[7], original_3[7],original_4[7],original_5[7],original_6[7],original_7[7],original_8[7],original_9[7],original_10[7],original_11[7],original_12[7]]
-    var min_max_avg_resilience0 = maxMinAvg(resilience0)
-    var ethics0 = [original_1[8], original_2[8], original_3[8],original_4[8],original_5[8],original_6[8],original_7[8],original_8[8],original_9[8],original_10[8],original_11[8],original_12[8]]
-    var min_max_avg_ethics0 = maxMinAvg(ethics0)
-    var leadership0 = [original_1[9], original_2[9], original_3[9],original_4[9],original_5[9],original_6[9],original_7[9],original_8[9],original_9[9],original_10[9],original_11[9],original_12[9]]
-    var min_max_avg_leadership0 = maxMinAvg(leadership0)
-    var metacognition0 = [original_1[10], original_2[10], original_3[10],original_4[10],original_5[10],original_6[10],original_7[10],original_8[10],original_9[10],original_10[10],original_11[10],original_12[10]]
-    var min_max_avg_metacognition0 = maxMinAvg(metacognition0)
-    var growth_mindset0 = [original_1[11], original_2[11], original_3[11],original_4[11],original_5[11],original_6[11],original_7[11],original_8[11],original_9[11],original_10[11],original_11[11],original_12[11]]
-    var min_max_avg_growth_mindset0 = maxMinAvg(growth_mindset0)
+    var final_critical_thinking2 = [f_opportunity1[1], f_opportunity2[1], f_opportunity3[1], f_opportunity4[1],
+    f_opportunity5[1], f_opportunity6[1], f_opportunity7[1], f_opportunity8[1], f_opportunity9[1],
+    f_opportunity10[1], f_opportunity11[1], f_opportunity12[1], f_opportunity13[1], f_opportunity14[1],
+    f_opportunity15[1], f_opportunity16[1], f_opportunity17[1], f_opportunity18[1], f_opportunity19[1],
+    f_opportunity20[1], f_opportunity21[1]]
 
-    var creativity1 = [final1[0],final2[0], final3[0],final4[0],final5[0],final6[0],final7[0],final8[0],final9[0],final10[0],final11[0],final12[0]]
-    var min_max_avg_creativity1 = maxMinAvg(creativity1)
-    var critical_thinking1 = [final1[1],final2[1], final3[1],final4[1],final5[1],final6[1],final7[1],final8[1],final9[1],final10[1],final11[1],final12[1]]
-    var min_max_avg_critical_thinking1 = maxMinAvg(critical_thinking1)
-    var communication1 = [final1[2],final2[2], final3[2],final4[2],final5[2],final6[2],final7[2],final8[2],final9[2],final10[2],final11[2],final12[2]]
-    var min_max_avg_communication1 = maxMinAvg(communication1)
-    
+    min_max_avg_critical_thinking2 = maxMinAvg(final_critical_thinking2)
+    console.log('min_max_avg_critical_thinking2 is:.......', min_max_avg_critical_thinking2)
 
-    var collaboration1 = [final1[3],final2[3], final3[3],final4[3],final5[3],final6[3],final7[3],final8[3],final9[3],final10[3],final11[3],final12[3]]
-    var min_max_avg_collaboration1 = maxMinAvg(collaboration1)
-    var mindfulness1 = [final1[4],final2[4], final3[4],final4[4],final5[4],final6[4],final7[4],final8[4],final9[4],final10[4],final11[4],final12[4]]
-    var min_max_avg_mindfulness1 = maxMinAvg(mindfulness1)
-    var curiousity1 = [final1[5],final2[5], final3[5],final4[5],final5[5],final6[5],final7[5],final8[5],final9[5],final10[5],final11[5],final12[5]]
-    var min_max_avg_curiousity1 = maxMinAvg(curiousity1)
-    var courage1 = [final1[6],final2[6], final3[6],final4[6],final5[6],final6[6],final7[6],final8[6],final9[6],final10[6],final11[6],final12[6]]
-    var min_max_avg_courage1 = maxMinAvg(courage1)
-    var resilience1 = [final1[7],final2[7], final3[7],final4[7],final5[7],final6[7],final7[7],final8[7],final9[7],final10[7],final11[7],final12[7]]
-    var min_max_avg_resilience1 = maxMinAvg(resilience1)
-    var ethics1 = [final1[8],final2[8], final3[8],final4[8],final5[8],final6[8],final7[8],final8[8],final9[8],final10[8],final11[8],final12[8]]
-    var min_max_avg_ethics1 = maxMinAvg(ethics1)
-    var leadership1 = [final1[9],final2[9], final3[9],final4[9],final5[9],final6[9],final7[9],final8[9],final9[9],final10[9],final11[9],final12[9]]
-    var min_max_avg_leadership1 = maxMinAvg(leadership1)
-    var metacognition1 = [final1[10],final2[10], final3[10],final4[10],final5[10],final6[10],final7[10],final8[10],final9[10],final10[10],final11[10],final12[10]]
-    var min_max_avg_metacognition1 = maxMinAvg(metacognition1)
-    var growth_mindset1 = [final1[11],final2[11], final3[11],final4[11],final5[11],final6[11],final7[11],final8[11],final9[11],final10[11],final11[11],final12[11]]
-    var min_max_avg_growth_mindset1 = maxMinAvg(growth_mindset1)
+    var final_communication2 = [f_opportunity1[2], f_opportunity2[2], f_opportunity3[2], f_opportunity4[2],
+    f_opportunity5[2], f_opportunity6[2], f_opportunity7[2], f_opportunity8[2], f_opportunity9[2],
+    f_opportunity10[2], f_opportunity11[2], f_opportunity12[2], f_opportunity13[2], f_opportunity14[2],
+    f_opportunity15[2], f_opportunity16[2], f_opportunity17[2], f_opportunity18[2], f_opportunity19[2],
+    f_opportunity20[2], f_opportunity21[2]]
 
-    var creativity2 = [f1[0],f2[0], f3[0],f4[0],f5[0],f6[0],f7[0],f8[0],f9[0],f10[0],f11[0],f12[0]]
-    var min_max_avg_creativity2 = maxMinAvg(creativity2)
-    var critical_thinking2 = [f1[1],f2[1], f3[1],f4[1],f5[1],f6[1],f7[1],f8[1],f9[1],f10[1],f11[1],f12[1]]
-    var min_max_avg_critical_thinking2 = maxMinAvg(critical_thinking2)
-    var communication2 = [f1[2],f2[2], f3[2],f4[2],f5[2],f6[2],f7[2],f8[2],f9[2],f10[2],f11[2],f12[2]]
-    var min_max_avg_communication2 = maxMinAvg(communication2)
-    var collaboration2 = [f1[3],f2[3], f3[3],f4[3],f5[3],f6[3],f7[3],f8[3],f9[3],f10[3],f11[3],f12[3]]
-    var min_max_avg_collaboration2 = maxMinAvg(collaboration2)
-    var mindfulness2 = [f1[4],f2[4], f3[4],f4[4],f5[4],f6[4],f7[4],f8[4],f9[4],f10[4],f11[4],f12[4]]
-    var min_max_avg_mindfulness2 = maxMinAvg(mindfulness2)
-    var curiousity2 = [f1[5],f2[5], f3[5],f4[5],f5[5],f6[5],f7[5],f8[5],f9[5],f10[5],f11[5],f12[5]]
-    var min_max_avg_curiousity2 = maxMinAvg(curiousity2)
-    var courage2 = [f1[6],f2[6], f3[6],f4[6],f5[6],f6[6],f7[6],f8[6],f9[6],f10[6],f11[6],f12[6]]
-    var min_max_avg_courage2 = maxMinAvg(courage2)
-    var resilience2 = [f1[7],f2[7], f3[7],f4[7],f5[7],f6[7],f7[7],f8[7],f9[7],f10[7],f11[7],f12[7]]
-    var min_max_avg_resilience2 = maxMinAvg(resilience2)
-    var ethics2 = [f1[8],f2[8], f3[8],f4[8],f5[8],f6[8],f7[8],f8[8],f9[8],f10[8],f11[8],f12[8]]
-    var min_max_avg_ethics2 = maxMinAvg(ethics2)
-    var leadership2 = [f1[9],f2[9], f3[9],f4[9],f5[9],f6[9],f7[9],f8[9],f9[9],f10[9],f11[9],f12[9]]
-    var min_max_avg_leadership2 = maxMinAvg(leadership2)
-    var metacognition2 = [f1[10],f2[10], f3[10],f4[10],f5[10],f6[10],f7[10],f8[10],f9[10],f10[10],f11[10],f12[10]]
-    var min_max_avg_metacognition2 = maxMinAvg(metacognition2)
-    var growth_mindset2 = [f1[11],f2[11], f3[11],f4[11],f5[11],f6[11],f7[11],f8[11],f9[11],f10[11],f11[11],f12[11]]
-    var min_max_avg_growth_mindset2 = maxMinAvg(growth_mindset2)
+    min_max_avg_communication2 = maxMinAvg(final_communication2)
+    console.log('min_max_avg_communication2 is:.......', min_max_avg_communication2)
+
+    var final_collaboration2 = [f_opportunity1[3], f_opportunity2[3], f_opportunity3[3], f_opportunity4[3],
+    f_opportunity5[3], f_opportunity6[3], f_opportunity7[3], f_opportunity8[3], f_opportunity9[3],
+    f_opportunity10[3], f_opportunity11[3], f_opportunity12[3], f_opportunity13[3], f_opportunity14[3],
+    f_opportunity15[3], f_opportunity16[3], f_opportunity17[3], f_opportunity18[3], f_opportunity19[3],
+    f_opportunity20[3], f_opportunity21[3]]
+
+    min_max_avg_collaboration2 = maxMinAvg(final_collaboration2)
+    console.log('min_max_avg_collaboration2 is:.......', min_max_avg_collaboration2)
+
+    var final_mindfulness2 = [f_opportunity1[4], f_opportunity2[4], f_opportunity3[4], f_opportunity4[4],
+    f_opportunity5[4], f_opportunity6[4], f_opportunity7[4], f_opportunity8[4], f_opportunity9[4],
+    f_opportunity10[4], f_opportunity11[4], f_opportunity12[4], f_opportunity13[4], f_opportunity14[4],
+    f_opportunity15[4], f_opportunity16[4], f_opportunity17[4], f_opportunity18[4], f_opportunity19[4],
+    f_opportunity20[4], f_opportunity21[4]]
+
+    min_max_avg_mindfulness2 = maxMinAvg(final_mindfulness2)
+    console.log('min_max_avg_mindfulness2 is:.......', min_max_avg_mindfulness2)
+
+    var final_curiousity2 = [f_opportunity1[5], f_opportunity2[5], f_opportunity3[5], f_opportunity4[5],
+    f_opportunity5[5], f_opportunity6[5], f_opportunity7[5], f_opportunity8[5], f_opportunity9[5],
+    f_opportunity10[5], f_opportunity11[5], f_opportunity12[5], f_opportunity13[5], f_opportunity14[5],
+    f_opportunity15[5], f_opportunity16[5], f_opportunity17[5], f_opportunity18[5], f_opportunity19[5],
+    f_opportunity20[5], f_opportunity21[5]]
+
+    min_max_avg_curiousity2 = maxMinAvg(final_curiousity2)
+    console.log('min_max_avg_curiousity2 is:.......', min_max_avg_curiousity2)
+
+    var final_courage2 = [f_opportunity1[6], f_opportunity2[6], f_opportunity3[6], f_opportunity4[6],
+    f_opportunity5[6], f_opportunity6[6], f_opportunity7[6], f_opportunity8[6], f_opportunity9[6],
+    f_opportunity10[6], f_opportunity11[6], f_opportunity12[6], f_opportunity13[6], f_opportunity14[6],
+    f_opportunity15[6], f_opportunity16[6], f_opportunity17[6], f_opportunity18[6], f_opportunity19[6],
+    f_opportunity20[6], f_opportunity21[6]]
+
+    min_max_avg_courage2 = maxMinAvg(final_courage2)
+    console.log('min_max_avg_courage2 is:.......', min_max_avg_courage2)
+
+
+    var final_resilience2 = [f_opportunity1[7], f_opportunity2[7], f_opportunity3[7], f_opportunity4[7],
+    f_opportunity5[7], f_opportunity6[7], f_opportunity7[7], f_opportunity8[7], f_opportunity9[7],
+    f_opportunity10[7], f_opportunity11[7], f_opportunity12[7], f_opportunity13[7], f_opportunity14[7],
+    f_opportunity15[7], f_opportunity16[7], f_opportunity17[7], f_opportunity18[7], f_opportunity19[7],
+    f_opportunity20[7], f_opportunity21[7]]
+
+    min_max_avg_resilience2= maxMinAvg(final_resilience2)
+    console.log('min_max_avg_resilience2 is:.......', min_max_avg_resilience2)
+
+    var final_ethics2 = [f_opportunity1[8], f_opportunity2[8], f_opportunity3[8], f_opportunity4[8],
+    f_opportunity5[8], f_opportunity6[8], f_opportunity7[8], f_opportunity8[8], f_opportunity9[8],
+    f_opportunity10[8], f_opportunity11[8], f_opportunity12[8], f_opportunity13[8], f_opportunity14[8],
+    f_opportunity15[8], f_opportunity16[8], f_opportunity17[8], f_opportunity18[8], f_opportunity19[8],
+    f_opportunity20[8], f_opportunity21[8]]
+
+    min_max_avg_ethics2 = maxMinAvg(final_ethics2)
+    console.log('min_max_avg_ethics2 is:.......', min_max_avg_ethics2)
+
+    var final_leadership2 = [f_opportunity1[9], f_opportunity2[9], f_opportunity3[9], f_opportunity4[9],
+    f_opportunity5[9], f_opportunity6[9], f_opportunity7[9], f_opportunity8[9], f_opportunity9[9],
+    f_opportunity10[9], f_opportunity11[9], f_opportunity12[9], f_opportunity13[9], f_opportunity14[9],
+    f_opportunity15[9], f_opportunity16[9], f_opportunity17[9], f_opportunity18[9], f_opportunity19[9],
+    f_opportunity20[9], f_opportunity21[9]]
+
+    min_max_avg_leadership2 = maxMinAvg(final_leadership2)
+    console.log('min_max_avg_leadership2 is:.......', min_max_avg_leadership2)
+
+    var final_metacognition2 = [f_opportunity1[10], f_opportunity2[10], f_opportunity3[10], f_opportunity4[10],
+    f_opportunity5[10], f_opportunity6[10], f_opportunity7[10], f_opportunity8[10], f_opportunity9[10],
+    f_opportunity10[10], f_opportunity11[10], f_opportunity12[10], f_opportunity13[10], f_opportunity14[10],
+    f_opportunity15[10], f_opportunity16[10], f_opportunity17[10], f_opportunity18[10], f_opportunity19[10],
+    f_opportunity20[10], f_opportunity21[10]]
+
+    min_max_avg_metacognition2 = maxMinAvg(final_metacognition2)
+    console.log('min_max_avg_metacognition2 is:.......', min_max_avg_metacognition2)
+
+    var final_growth_mindset2 = [f_opportunity1[11], f_opportunity2[11], f_opportunity3[11], f_opportunity4[11],
+    f_opportunity5[11], f_opportunity6[11], f_opportunity7[11], f_opportunity8[11], f_opportunity9[11],
+    f_opportunity10[11], f_opportunity11[11], f_opportunity12[11], f_opportunity13[11], f_opportunity14[11],
+    f_opportunity15[11], f_opportunity16[11], f_opportunity17[11], f_opportunity18[11], f_opportunity19[11],
+    f_opportunity20[11], f_opportunity21[11]]
+
+    min_max_avg_growth_mindset2 = maxMinAvg(final_growth_mindset2)
+    console.log('min_max_avg_growth_mindset2 is:.......', min_max_avg_growth_mindset2)
 
 
     OUTPUT1 = document.getElementById('scenario-one-output1');
     OUTPUT2 = document.getElementById('scenario-one-output2');
     OUTPUT3 = document.getElementById('scenario-one-output3');
 
-    var trace1 = {
-        x: ['Creativity', 'Critical-thinking', 'Communication', 'Collaboration'],
-        y: [min_max_avg_creativity0[2], min_max_avg_critical_thinking0[2], min_max_avg_communication0[2], min_max_avg_collaboration0[2]],
-        name: 'Original',
-        error_y: {
-          type: 'data',
-          array: [0.5, 0.5, 0.5, 0.5],
-          visible: true
-        },
-        type: 'bar'
-      };
-      var trace2 = {
+    var creativity_diff1 = (min_max_avg_creativity1[1] - min_max_avg_creativity1[0] - min_max_avg_creativity1[2])/2
+    var creativity_diff2 = (min_max_avg_creativity2[1] - min_max_avg_creativity2[0] - min_max_avg_creativity2[2])/2
+
+    var critical_thinking_diff1 = (min_max_avg_critical_thinking1[1] - min_max_avg_critical_thinking1[0] - min_max_avg_critical_thinking1[2])/2
+    var critical_thinking_diff2 = (min_max_avg_critical_thinking2[1] - min_max_avg_critical_thinking2[0] - min_max_avg_critical_thinking2[2])/2
+
+    var communication_diff1 = (min_max_avg_communication1[1] - min_max_avg_communication1[0] - min_max_avg_communication1[2])/2
+    var communication_diff2 = (min_max_avg_communication2[1] - min_max_avg_communication2[0] - min_max_avg_communication2[2])/2
+
+    var collaboration_diff1 = (min_max_avg_collaboration1[1] - min_max_avg_collaboration1[0] - min_max_avg_collaboration1[2])/2
+    var collaboration_diff2 = (min_max_avg_collaboration2[1] - min_max_avg_collaboration2[0] - min_max_avg_collaboration2[2])/2
+
+
+      var trace1 = {
         x: ['Creativity', 'Critical-thinking', 'Communication', 'Collaboration'],
         y: [min_max_avg_creativity1[2],min_max_avg_critical_thinking1[2], min_max_avg_communication1[2], min_max_avg_collaboration1[2]],
         name: 'Without Intervention',
         error_y: {
           type: 'data',
-          array: [0.5, 1, 2, 0.5],
+          array: [creativity_diff1, critical_thinking_diff1, communication_diff1, collaboration_diff1],
           visible: true
         },
         type: 'bar'
       };
 
-      var trace3 = {
+      var trace2 = {
         x: ['Creativity', 'Critical-thinking', 'Communication', 'Collaboration'],
         y: [min_max_avg_creativity2[2],min_max_avg_critical_thinking2[2], min_max_avg_communication2[2], min_max_avg_collaboration2[2]],
         name: 'With Intervention',
         error_y: {
           type: 'data',
-          array: [0.5, 1, 2, 1],
+          array: [creativity_diff2, critical_thinking_diff2, communication_diff2, collaboration_diff2],
           visible: true
         },
         type: 'bar'
@@ -363,44 +460,49 @@ function calculate_output_score() {
         title:'Skill Prediction',
         barmode: 'group'
       };
-      var data0 = [trace1, trace2, trace3];
+      var data0 = [trace1, trace2];
       Plotly.newPlot(OUTPUT1, data0, layout);
 
+      
+    var mindfullness_diff1 = (min_max_avg_mindfulness1[1] - min_max_avg_mindfulness1[0] - min_max_avg_mindfulness1[2])/2
+    var mindfullness_diff2 = (min_max_avg_mindfulness2[1] - min_max_avg_mindfulness2[0] - min_max_avg_mindfulness2[2])/2
 
+    var curiousity_diff1 = (min_max_avg_curiousity1[1] - min_max_avg_curiousity1[0] - min_max_avg_curiousity1[2])/2
+    var curiousity_diff2 = (min_max_avg_curiousity2[1] - min_max_avg_curiousity2[0] - min_max_avg_curiousity2[2])/2
 
-      var trace4 = {
-        x: ['Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
-        y: [ min_max_avg_curiousity0[2], min_max_avg_courage0[2], min_max_avg_resilience0[2],
-            min_max_avg_ethics0[2], min_max_avg_leadership0[2]],
-        name: 'Original',
-        error_y: {
-          type: 'data',
-          array: [1, 0.5, 0.5, 0.5, 0.5],
-          visible: true
-        },
-        type: 'bar'
-      };
-      var trace5 = {
-        x: ['Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
-        y: [ min_max_avg_curiousity1[2], min_max_avg_courage1[2], min_max_avg_resilience1[2],
+    var courage_diff1 = (min_max_avg_courage1[1] - min_max_avg_courage1[0] - min_max_avg_courage1[2])/2
+    var courage_diff2 = (min_max_avg_courage2[1] - min_max_avg_courage2[0] - min_max_avg_courage2[2])/2
+
+    var resilience_diff1 = (min_max_avg_resilience1[1] - min_max_avg_resilience1[0] - min_max_avg_resilience1[2])/2
+    var resilience_diff2 = (min_max_avg_resilience2[1] - min_max_avg_resilience2[0] - min_max_avg_resilience2[2])/2
+
+    var ethics_diff1 = (min_max_avg_ethics1[1] - min_max_avg_ethics1[0] - min_max_avg_ethics1[2])/2
+    var ethics_diff2 = (min_max_avg_ethics2[1] - min_max_avg_ethics2[0] - min_max_avg_ethics2[2])/2
+
+    var leadership_diff1 = (min_max_avg_leadership1[1] - min_max_avg_leadership1[0] - min_max_avg_leadership1[2])/2
+    var leadership_diff2 = (min_max_avg_leadership2[1] - min_max_avg_leadership2[0] - min_max_avg_leadership2[2])/2
+
+      var trace3 = {
+        x: ['Mindfullness', 'Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
+        y: [min_max_avg_mindfulness1[2], min_max_avg_curiousity1[2], min_max_avg_courage1[2], min_max_avg_resilience1[2],
         min_max_avg_ethics1[2], min_max_avg_leadership1[2]],
         name: 'Without Intervention',
         error_y: {
           type: 'data',
-          array: [1, 2, 0.5, 1, 1],
+          array: [mindfullness_diff1, curiousity_diff1, courage_diff1, resilience_diff1, ethics_diff1, leadership_diff1],
           visible: true
         },
         type: 'bar'
       };
 
-      var trace6 = {
-        x: ['Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
-        y: [ min_max_avg_curiousity2[2], min_max_avg_courage2[2], min_max_avg_resilience2[2],
+      var trace4 = {
+        x: ['Mindfullness', 'Curiousity', 'Courage', 'Resilience', 'Ethics', 'Leadership'],
+        y: [min_max_avg_mindfulness2[2], min_max_avg_curiousity2[2], min_max_avg_courage2[2], min_max_avg_resilience2[2],
         min_max_avg_ethics2[2], min_max_avg_leadership2[2]],
         name: 'With Intervention',
         error_y: {
           type: 'data',
-          array: [1, 2, 1, 1, 1.5],
+          array: [mindfullness_diff2, curiousity_diff2, courage_diff2, resilience_diff2, ethics_diff2, leadership_diff2],
           visible: true
         },
         type: 'bar'
@@ -410,44 +512,35 @@ function calculate_output_score() {
         title:'Character Prediction',
         barmode: 'group'
       };
-      var data1 = [trace4, trace5, trace6];
+      var data1 = [trace3, trace4];
       Plotly.newPlot(OUTPUT2, data1, layout);
 
+    var metacognition_diff1 = (min_max_avg_metacognition1[1] - min_max_avg_metacognition1[0] - min_max_avg_metacognition1[2])/2
+    var metacognition_diff2 = (min_max_avg_metacognition2[1] - min_max_avg_metacognition2[0] - min_max_avg_metacognition2[2])/2
 
-      var trace7 = {
-        x: ['Mindfulness', 'Metacognition', 'Growth-mindset'],
-        y: [min_max_avg_mindfulness0[2], min_max_avg_metacognition0[2],min_max_avg_growth_mindset0[2]],
-        name: 'Original',
-        error_y: {
-          type: 'data',
-          array: [0.5, 1, 0.5],
-          visible: true
-        },
-        type: 'bar'
-      };
-      var trace8 = {
-        x: ['Mindfulness', 'Metacognition', 'Growth-mindset'],
-        y: [min_max_avg_mindfulness1[2], min_max_avg_metacognition1[2], min_max_avg_growth_mindset1[2]],
+    var growth_mindset_diff1 = (min_max_avg_growth_mindset1[1] - min_max_avg_growth_mindset1[0] - min_max_avg_growth_mindset1[2])/2
+    var growth_mindset_diff2 = (min_max_avg_growth_mindset2[1] - min_max_avg_growth_mindset2[0] - min_max_avg_growth_mindset2[2])/2
+
+
+      var trace5 = {
+        x: [ 'Metacognition', 'Growth-mindset'],
+        y: [min_max_avg_metacognition1[2], min_max_avg_growth_mindset1[2]],
         name: 'Without Intervention',
         error_y: {
           type: 'data',
-          array: [ min_max_avg_mindfulness1[1] - min_max_avg_mindfulness1[0],
-                   min_max_avg_metacognition1[1] - min_max_avg_metacognition1[0],
-                   min_max_avg_growth_mindset1[1] - min_max_avg_growth_mindset1[0]],
+          array: [metacognition_diff1, growth_mindset_diff1],
           visible: true
         },
         type: 'bar'
       };
 
-      var trace9 = {
-        x: ['Mindfulness', 'Metacognition', 'Growth-mindset'],
-        y: [min_max_avg_mindfulness2[2], min_max_avg_metacognition2[2], min_max_avg_growth_mindset2[2]],
+      var trace6 = {
+        x: ['Metacognition', 'Growth-mindset'],
+        y: [min_max_avg_metacognition2[2], min_max_avg_growth_mindset2[2]],
         name: 'With Intervention',
         error_y: {
           type: 'data',
-          array: [ min_max_avg_mindfulness2[1] - min_max_avg_mindfulness2[0],
-                   min_max_avg_metacognition2[1] - min_max_avg_metacognition2[0],
-                   min_max_avg_growth_mindset2[1] - min_max_avg_growth_mindset2[0]],
+          array: [metacognition_diff2, growth_mindset_diff2],
           visible: true
         },
         type: 'bar'
@@ -457,7 +550,7 @@ function calculate_output_score() {
         title:'Meta-Learning Prediction',
         barmode: 'group'
       };
-      var data2 = [trace7, trace8, trace9];
+      var data2 = [trace5, trace6];
       Plotly.newPlot(OUTPUT3, data2, layout);
     
 }
