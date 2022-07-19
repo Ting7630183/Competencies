@@ -26,9 +26,9 @@ const school_neutral = [15.5, 19.63, 18.8, 18.8, 18.5, 17.83, 18.13, 18.35, 17.4
 const school_low = [10.33, 13.08, 12.53, 12.53, 12.33, 11.88, 12.08, 12.23, 11.63, 12.83, 13.13, 11.73]
 const school_high = [31, 39.25, 37.6, 37.6, 37, 35.65, 36.25, 36.7, 34.9, 38.5, 39.4, 35.2]
 
-const meta_data = [0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 12, 12]
-const character_data = [0, 0, 0, 0, 0, 12, 12, 12, 12, 12, 0, 0]
-const skill_data = [12, 12, 12, 12, 0, 0, 0, 0, 0, 0, 0, 0]
+const meta_data = [3.6, 5.04, 2.52, 1.08, 12, 4.68, 2.16, 4.68, 5.04, 2.16, 12, 12]
+const character_data = [1.08, 0.864, 2.376, 3.456, 1.944, 7.2, 7.2, 7.2, 7.2, 7.2, 3.24, 1.296]
+const skill_data = [9, 9, 9, 9, 0, 2.16, 1.35, 1.35, 1.62, 7.02, 2.7, 0]
 
 function convert_original_score_to_opportunity(param){
     var result=[]
@@ -44,8 +44,6 @@ function calculate_final_opportunity(param1, param2) {
     for(var i = 0; i < param1.length; i++) {
         result[i] = param1[i] + param2[i]
     }
-    // console.log("the final opportunities are: ")
-    // console.log(result)
     
     return result;
 }
@@ -56,9 +54,7 @@ function calculate_final_score(param) {
     for(var i = 0; i < param.length; i++) {
         result[i] =  ((Math.sqrt(76 * param[i] + 5)) * 0.117688-0.263158)
     }
-    // console.log("the final scores are: ")
-    // console.log(result)
-
+    
     return result;
 }
 
@@ -83,7 +79,6 @@ function maxMinAvg(arr) {
 
 function calculate_output_score() {
     var starting_opportunity_1 = convert_original_score_to_opportunity(original_1)
-    console.log("starting_opporitunity_1 is:.....", starting_opportunity_1)
     var starting_opportunity_2 = convert_original_score_to_opportunity(original_2)
     var starting_opportunity_3 = convert_original_score_to_opportunity(original_3)
     var starting_opportunity_4 = convert_original_score_to_opportunity(original_4)
@@ -191,7 +186,6 @@ function calculate_output_score() {
     final_opportunity20[1], final_opportunity21[1]]
 
     min_max_avg_critical_thinking1 = maxMinAvg(final_critical_thinking1)
-    console.log('min_max_avg_critical_thinking1 is:.......', min_max_avg_critical_thinking1)
 
     var final_communication1 = [final_opportunity1[2], final_opportunity2[2], final_opportunity3[2], final_opportunity4[2],
     final_opportunity5[2], final_opportunity6[2], final_opportunity7[2], final_opportunity8[2], final_opportunity9[2],
@@ -200,7 +194,6 @@ function calculate_output_score() {
     final_opportunity20[2], final_opportunity21[2]]
 
     min_max_avg_communication1 = maxMinAvg(final_communication1)
-    console.log('min_max_avg_communication1 is:.......', min_max_avg_communication1)
 
     var final_collaboration1 = [final_opportunity1[3], final_opportunity2[3], final_opportunity3[3], final_opportunity4[3],
     final_opportunity5[3], final_opportunity6[3], final_opportunity7[3], final_opportunity8[3], final_opportunity9[3],
@@ -209,7 +202,6 @@ function calculate_output_score() {
     final_opportunity20[3], final_opportunity21[3]]
 
     min_max_avg_collaboration1 = maxMinAvg(final_collaboration1)
-    console.log('min_max_avg_collaboration1 is:.......', min_max_avg_collaboration1)
 
     var final_mindfulness1 = [final_opportunity1[4], final_opportunity2[4], final_opportunity3[4], final_opportunity4[4],
     final_opportunity5[4], final_opportunity6[4], final_opportunity7[4], final_opportunity8[4], final_opportunity9[4],
@@ -218,7 +210,6 @@ function calculate_output_score() {
     final_opportunity20[4], final_opportunity21[4]]
 
     min_max_avg_mindfulness1 = maxMinAvg(final_mindfulness1)
-    console.log('min_max_avg_mindfulness1 is:.......', min_max_avg_mindfulness1)
 
     var final_curiousity1 = [final_opportunity1[5], final_opportunity2[5], final_opportunity3[5], final_opportunity4[5],
     final_opportunity5[5], final_opportunity6[5], final_opportunity7[5], final_opportunity8[5], final_opportunity9[5],
@@ -227,7 +218,6 @@ function calculate_output_score() {
     final_opportunity20[5], final_opportunity21[5]]
 
     min_max_avg_curiousity1 = maxMinAvg(final_curiousity1)
-    console.log('min_max_avg_curiousity1 is:.......', min_max_avg_curiousity1)
 
     var final_courage1 = [final_opportunity1[6], final_opportunity2[6], final_opportunity3[6], final_opportunity4[6],
     final_opportunity5[6], final_opportunity6[6], final_opportunity7[6], final_opportunity8[6], final_opportunity9[6],
@@ -245,8 +235,7 @@ function calculate_output_score() {
     final_opportunity20[7], final_opportunity21[7]]
 
     min_max_avg_resilience1= maxMinAvg(final_resilience1)
-    console.log('min_max_avg_resilience1 is:.......', min_max_avg_resilience1)
-
+  
     var final_ethics1 = [final_opportunity1[8], final_opportunity2[8], final_opportunity3[8], final_opportunity4[8],
     final_opportunity5[8], final_opportunity6[8], final_opportunity7[8], final_opportunity8[8], final_opportunity9[8],
     final_opportunity10[8], final_opportunity11[8], final_opportunity12[8], final_opportunity13[8], final_opportunity14[8],
@@ -254,7 +243,6 @@ function calculate_output_score() {
     final_opportunity20[8], final_opportunity21[8]]
 
     min_max_avg_ethics1 = maxMinAvg(final_ethics1)
-    console.log('min_max_avg_ethics1 is:.......', min_max_avg_ethics1)
 
     var final_leadership1 = [final_opportunity1[9], final_opportunity2[9], final_opportunity3[9], final_opportunity4[9],
     final_opportunity5[9], final_opportunity6[9], final_opportunity7[9], final_opportunity8[9], final_opportunity9[9],
@@ -263,7 +251,6 @@ function calculate_output_score() {
     final_opportunity20[9], final_opportunity21[9]]
 
     min_max_avg_leadership1 = maxMinAvg(final_leadership1)
-    console.log('min_max_avg_leadership1 is:.......', min_max_avg_leadership1)
 
     var final_metacognition1 = [final_opportunity1[10], final_opportunity2[10], final_opportunity3[10], final_opportunity4[10],
     final_opportunity5[10], final_opportunity6[10], final_opportunity7[10], final_opportunity8[10], final_opportunity9[10],
@@ -272,7 +259,6 @@ function calculate_output_score() {
     final_opportunity20[10], final_opportunity21[10]]
 
     min_max_avg_metacognition1 = maxMinAvg(final_metacognition1)
-    console.log('min_max_avg_metacognition1 is:.......', min_max_avg_metacognition1)
 
     var final_growth_mindset1 = [final_opportunity1[11], final_opportunity2[11], final_opportunity3[11], final_opportunity4[11],
     final_opportunity5[11], final_opportunity6[11], final_opportunity7[11], final_opportunity8[11], final_opportunity9[11],
@@ -281,7 +267,6 @@ function calculate_output_score() {
     final_opportunity20[11], final_opportunity21[11]]
 
     min_max_avg_growth_mindset1 = maxMinAvg(final_growth_mindset1)
-    console.log('min_max_avg_growth_mindset1 is:.......', min_max_avg_growth_mindset1)
 
     var f_opportunity1 = calculate_final_opportunity(starting_opportunity_1, add_opportunity2)
     var f_opportunity2 = calculate_final_opportunity(starting_opportunity_2, add_opportunity2)
@@ -312,7 +297,6 @@ function calculate_output_score() {
     f_opportunity20[0], f_opportunity21[0]]
 
     min_max_avg_creativity2 = maxMinAvg(final_creativity2)
-    console.log('min_max_avg_creativity2 is:.......', min_max_avg_creativity2)
 
     var final_critical_thinking2 = [f_opportunity1[1], f_opportunity2[1], f_opportunity3[1], f_opportunity4[1],
     f_opportunity5[1], f_opportunity6[1], f_opportunity7[1], f_opportunity8[1], f_opportunity9[1],
@@ -321,7 +305,6 @@ function calculate_output_score() {
     f_opportunity20[1], f_opportunity21[1]]
 
     min_max_avg_critical_thinking2 = maxMinAvg(final_critical_thinking2)
-    console.log('min_max_avg_critical_thinking2 is:.......', min_max_avg_critical_thinking2)
 
     var final_communication2 = [f_opportunity1[2], f_opportunity2[2], f_opportunity3[2], f_opportunity4[2],
     f_opportunity5[2], f_opportunity6[2], f_opportunity7[2], f_opportunity8[2], f_opportunity9[2],
@@ -330,7 +313,6 @@ function calculate_output_score() {
     f_opportunity20[2], f_opportunity21[2]]
 
     min_max_avg_communication2 = maxMinAvg(final_communication2)
-    console.log('min_max_avg_communication2 is:.......', min_max_avg_communication2)
 
     var final_collaboration2 = [f_opportunity1[3], f_opportunity2[3], f_opportunity3[3], f_opportunity4[3],
     f_opportunity5[3], f_opportunity6[3], f_opportunity7[3], f_opportunity8[3], f_opportunity9[3],
@@ -339,7 +321,6 @@ function calculate_output_score() {
     f_opportunity20[3], f_opportunity21[3]]
 
     min_max_avg_collaboration2 = maxMinAvg(final_collaboration2)
-    console.log('min_max_avg_collaboration2 is:.......', min_max_avg_collaboration2)
 
     var final_mindfulness2 = [f_opportunity1[4], f_opportunity2[4], f_opportunity3[4], f_opportunity4[4],
     f_opportunity5[4], f_opportunity6[4], f_opportunity7[4], f_opportunity8[4], f_opportunity9[4],
@@ -348,7 +329,6 @@ function calculate_output_score() {
     f_opportunity20[4], f_opportunity21[4]]
 
     min_max_avg_mindfulness2 = maxMinAvg(final_mindfulness2)
-    console.log('min_max_avg_mindfulness2 is:.......', min_max_avg_mindfulness2)
 
     var final_curiousity2 = [f_opportunity1[5], f_opportunity2[5], f_opportunity3[5], f_opportunity4[5],
     f_opportunity5[5], f_opportunity6[5], f_opportunity7[5], f_opportunity8[5], f_opportunity9[5],
@@ -357,7 +337,6 @@ function calculate_output_score() {
     f_opportunity20[5], f_opportunity21[5]]
 
     min_max_avg_curiousity2 = maxMinAvg(final_curiousity2)
-    console.log('min_max_avg_curiousity2 is:.......', min_max_avg_curiousity2)
 
     var final_courage2 = [f_opportunity1[6], f_opportunity2[6], f_opportunity3[6], f_opportunity4[6],
     f_opportunity5[6], f_opportunity6[6], f_opportunity7[6], f_opportunity8[6], f_opportunity9[6],
@@ -366,8 +345,6 @@ function calculate_output_score() {
     f_opportunity20[6], f_opportunity21[6]]
 
     min_max_avg_courage2 = maxMinAvg(final_courage2)
-    console.log('min_max_avg_courage2 is:.......', min_max_avg_courage2)
-
 
     var final_resilience2 = [f_opportunity1[7], f_opportunity2[7], f_opportunity3[7], f_opportunity4[7],
     f_opportunity5[7], f_opportunity6[7], f_opportunity7[7], f_opportunity8[7], f_opportunity9[7],
@@ -376,7 +353,6 @@ function calculate_output_score() {
     f_opportunity20[7], f_opportunity21[7]]
 
     min_max_avg_resilience2= maxMinAvg(final_resilience2)
-    console.log('min_max_avg_resilience2 is:.......', min_max_avg_resilience2)
 
     var final_ethics2 = [f_opportunity1[8], f_opportunity2[8], f_opportunity3[8], f_opportunity4[8],
     f_opportunity5[8], f_opportunity6[8], f_opportunity7[8], f_opportunity8[8], f_opportunity9[8],
@@ -385,7 +361,6 @@ function calculate_output_score() {
     f_opportunity20[8], f_opportunity21[8]]
 
     min_max_avg_ethics2 = maxMinAvg(final_ethics2)
-    console.log('min_max_avg_ethics2 is:.......', min_max_avg_ethics2)
 
     var final_leadership2 = [f_opportunity1[9], f_opportunity2[9], f_opportunity3[9], f_opportunity4[9],
     f_opportunity5[9], f_opportunity6[9], f_opportunity7[9], f_opportunity8[9], f_opportunity9[9],
@@ -394,7 +369,6 @@ function calculate_output_score() {
     f_opportunity20[9], f_opportunity21[9]]
 
     min_max_avg_leadership2 = maxMinAvg(final_leadership2)
-    console.log('min_max_avg_leadership2 is:.......', min_max_avg_leadership2)
 
     var final_metacognition2 = [f_opportunity1[10], f_opportunity2[10], f_opportunity3[10], f_opportunity4[10],
     f_opportunity5[10], f_opportunity6[10], f_opportunity7[10], f_opportunity8[10], f_opportunity9[10],
@@ -403,7 +377,6 @@ function calculate_output_score() {
     f_opportunity20[10], f_opportunity21[10]]
 
     min_max_avg_metacognition2 = maxMinAvg(final_metacognition2)
-    console.log('min_max_avg_metacognition2 is:.......', min_max_avg_metacognition2)
 
     var final_growth_mindset2 = [f_opportunity1[11], f_opportunity2[11], f_opportunity3[11], f_opportunity4[11],
     f_opportunity5[11], f_opportunity6[11], f_opportunity7[11], f_opportunity8[11], f_opportunity9[11],
@@ -412,7 +385,6 @@ function calculate_output_score() {
     f_opportunity20[11], f_opportunity21[11]]
 
     min_max_avg_growth_mindset2 = maxMinAvg(final_growth_mindset2)
-    console.log('min_max_avg_growth_mindset2 is:.......', min_max_avg_growth_mindset2)
 
 
     OUTPUT1 = document.getElementById('scenario-one-output1');
