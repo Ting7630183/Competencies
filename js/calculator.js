@@ -121,8 +121,6 @@ function calculate_output_score() {
     console.log("add_opportunity1 is:")
     console.log(add_opportunity1)
 
-
-    
     var add_opportunity2 = add_opportunity1
     let intervention2 = document.getElementById("intervention2").value
     console.log('intervention2 is:', intervention2)
@@ -436,7 +434,8 @@ function calculate_output_score() {
 
       var layout = {
         title:'Skill Prediction',
-        barmode: 'group'
+        barmode: 'group',
+        paper_bgcolor: 'rgb(254, 247, 234)'
       };
       var data0 = [trace1, trace2];
       Plotly.newPlot(OUTPUT1, data0, layout);
@@ -494,7 +493,8 @@ function calculate_output_score() {
 
       var layout = {
         title:'Character Prediction',
-        barmode: 'group'
+        barmode: 'group',
+        paper_bgcolor: 'rgb(254, 247, 234)',
       };
       var data1 = [trace3, trace4];
       Plotly.newPlot(OUTPUT2, data1, layout);
@@ -538,7 +538,8 @@ function calculate_output_score() {
 
       var layout = {
         title:'Meta-Learning Prediction',
-        barmode: 'group'
+        barmode: 'group',
+        paper_bgcolor: 'rgb(254, 247, 234)',
       };
       var data2 = [trace5, trace6];
       Plotly.newPlot(OUTPUT3, data2, layout);
