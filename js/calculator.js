@@ -437,7 +437,11 @@ function calculate_output_score() {
         barmode: 'group',
         paper_bgcolor: 'rgb(254, 247, 234)',
         yaxis: {
+          title: 'Opportunity score',
           range: [0, 80],
+        },
+        xaxis:{
+          title: 'Competencies',
         }
       };
       var data0 = [trace1, trace2];
@@ -499,7 +503,11 @@ function calculate_output_score() {
         barmode: 'group',
         paper_bgcolor: 'rgb(254, 247, 234)',
         yaxis: {
+          title: 'Opportunity score',
           range: [0, 80],
+        },
+        xaxis:{
+          title: 'Competencies',
         }
       };
       var data1 = [trace3, trace4];
@@ -547,7 +555,11 @@ function calculate_output_score() {
         barmode: 'group',
         paper_bgcolor: 'rgb(254, 247, 234)',
         yaxis: {
+          title: 'Opportunity score',
           range: [0, 80],
+        },
+        xaxis:{
+          title: 'Competencies',
         }
       };
       var data2 = [trace5, trace6];
