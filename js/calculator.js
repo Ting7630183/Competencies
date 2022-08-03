@@ -433,7 +433,7 @@ function calculate_output_score() {
       };
 
       var layout = {
-        title:'Skill Prediction',
+        title:'Score Prediction for Skill Dimension',
         barmode: 'group',
         paper_bgcolor: 'rgb(254, 247, 234)',
         yaxis: {
@@ -499,7 +499,7 @@ function calculate_output_score() {
       };
 
       var layout = {
-        title:'Character Prediction',
+        title:'Score Prediction for Character Dimension',
         barmode: 'group',
         paper_bgcolor: 'rgb(254, 247, 234)',
         yaxis: {
@@ -551,7 +551,7 @@ function calculate_output_score() {
       };
 
       var layout = {
-        title:'Meta-Learning Prediction',
+        title:'Score Prediction for Meta-learning Dimension',
         barmode: 'group',
         paper_bgcolor: 'rgb(254, 247, 234)',
         yaxis: {
